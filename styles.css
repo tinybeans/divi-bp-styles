@@ -1,0 +1,161 @@
+.et_pb_contact_right {
+    margin-top: 0.8em;
+}
+
+/* Speech Bubbles
+ *------------------------------------------------------------------------*/
+
+/* Point on the right */
+@media (min-width: 981px) {
+    .bp-speech-bubble-right-bottom .et_pb_text_inner {
+        position: relative;
+        background: #F6F6F6;
+        border-radius: .5em;
+        padding: 1em 1.5em
+    }
+    .bp-speech-bubble-right-bottom .et_pb_text_inner:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 50px;
+        width: 0;
+        height: 0;
+        border: 20px solid transparent;
+        border-left-color: #F6F6F6;
+        border-right: 0;
+        margin-top: -20px;
+        margin-right: -20px;
+    }
+}
+
+@media (max-width: 980px) {
+    .bp-speech-bubble-right-bottom .et_pb_text_inner {
+        position: relative;
+        background: #F6F6F6;
+        border-radius: .5em;
+        padding: 1em 1.5em
+    }
+    .bp-speech-bubble-right-bottom .et_pb_text_inner:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border: 20px solid transparent;
+        border-top-color: #F6F6F6;
+        border-bottom: 0;
+        margin-left: -20px;
+        margin-bottom: -20px;
+    }
+}
+
+
+/* Point on top */
+
+.pa-speech-bubble-top {
+    position: relative;
+    background: #00d263;
+    border-radius: .4em;
+}
+
+.pa-speech-bubble-top:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-bottom-color: #00d263;
+    border-top: 0;
+    margin-left: -20px;
+    margin-top: -20px;
+}
+
+/* Point on the the bottom */
+
+.pa-speech-bubble-bottom {
+    position: relative;
+    background: #00d263;
+    border-radius: .4em;
+}
+
+.pa-speech-bubble-bottom:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top-color: #00d263;
+    border-bottom: 0;
+    margin-left: -20px;
+    margin-bottom: -20px;
+}
+
+/* Point on the left*/
+
+.pa-speech-bubble-left {
+    position: relative;
+    background: #00d263;
+    border-radius: .4em;
+}
+
+.pa-speech-bubble-left:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-right-color: #00d263;
+    border-left: 0;
+    margin-top: -20px;
+    margin-left: -20px;
+}
+
+
+/* Flex Layout
+ *------------------------------------------------------------------------*/
+.bp-flex {
+    display: flex;
+    column-gap: 50px;
+    row-gap: 30px;
+
+}
+.bp-flex:after {
+    content: none !important;
+    display: none !important;
+    clear: none !important;
+    visibility: visible !important;
+    line-height: normal !important;
+    height: auto !important;
+    width: auto !important;
+}
+.bp-flex-reverse {
+    flex-direction: row-reverse;
+}
+.bp-flex-col {
+    float: none;
+    flex: 1;
+    width: auto !important;
+}
+
+@media (max-width: 980px) {
+    .bp-flex {
+        display: flex;
+        flex-direction: column;
+    }
+    .bp-flex-col {
+        margin-bottom: 0 !important;
+    }
+}
+@media (min-width: 981px) {
+    .bp-flex-col {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+}
