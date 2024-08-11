@@ -2,7 +2,19 @@
     margin-top: 0.8em;
 }
 
-/* Speech Bubbles
+/*------------------------------------------------------------------------*
+ * Common
+ *------------------------------------------------------------------------*/
+/* Set `padding-bottom: 0` only if the p element is the last child. */
+p:not(.has-background):last-of-type {
+    padding-bottom: 1em;
+}
+p:not(.has-background):last-child {
+    padding-bottom: 0;
+}
+
+/*------------------------------------------------------------------------*
+ * Speech Bubbles
  *------------------------------------------------------------------------*/
 
 /* Point on the right */
@@ -117,9 +129,10 @@
     margin-left: -20px;
 }
 
-
-/* Flex Layout
+/*------------------------------------------------------------------------*
+ * Flex Layout
  *------------------------------------------------------------------------*/
+
 .bp-flex {
     display: flex;
     column-gap: 50px;
